@@ -1,0 +1,12 @@
+.vscode
+.ipynb_checkpoints
+__pycache__
+
+*.bin
+*.optim
+
+*.log
+
+venv
+experiments
+data/vectors

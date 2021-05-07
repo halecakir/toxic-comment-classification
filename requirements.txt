@@ -1,0 +1,12 @@
+docopt==0.6.2
+scikit-learn==0.24.2
+pandas==1.2.4
+nltk==3.6.2
+contractions==0.0.48
+matplotlib==3.4.1
+gensim==4.0.1
+python-Levenshtein==0.12.2
+torch
+torchvision
+torchaudio
+comet-ml==3.9.1
