@@ -1,4 +1,4 @@
-"""DataBoss - Toxic Comment Classification Task
+"""Toxic Comment Classification
 
 Huseyin Alecakir huseyinalecakir@gmail.com
 
@@ -81,7 +81,7 @@ def reset_seeds(seed):
 
 def train(args, device):
     def prepare_data(train_data, params_save_path, valid_ratio):
-        sentences, labels = read_train_corpus(train_data, limit=1000)
+        sentences, labels = read_train_corpus(train_data)
         sentences = NLPUtils.preprocess_pipeline(sentences)
 
         sentences = np.array(sentences, dtype=object)
@@ -333,7 +333,7 @@ def evaluate(model, validation_instances, batch_size, device):
 
 def test(args, device):
     def prepare_data(test_data_sents, test_data_labels):
-        sentences, labels = read_test_corpus(test_data_sents, test_data_labels, limit=100)
+        sentences, labels = read_test_corpus(test_data_sents, test_data_labels)
         sentences = NLPUtils.preprocess_pipeline(sentences)
         sentences = np.array(sentences, dtype=object)
         labels = np.array(labels)

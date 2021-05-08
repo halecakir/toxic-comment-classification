@@ -1,5 +1,7 @@
 # Toxic Comment Classification
 
+Yet another toxic comment classification
+
 ## Installation
 
 #### Prerequisites
